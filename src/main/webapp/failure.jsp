@@ -11,7 +11,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1 align="center">User with such login is already registered !</h1>
+	<h1 align="center">Registration error !</h1>
 	<h2 align="center">
 		<a href="index.jsp">Login Page</a>
 	</h2>
