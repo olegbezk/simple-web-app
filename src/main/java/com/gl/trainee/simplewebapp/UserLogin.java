@@ -35,6 +35,7 @@ public class UserLogin extends HttpServlet {
 
 		String user = request.getParameter("user");
 		String pass = request.getParameter("pass");
+		String conf = request.getParameter("conf");
 
 		if (request.getParameter("submit") != null) {
 			if (map.containsKey(user) && map.get(user).equals(pass))
@@ -43,7 +44,9 @@ public class UserLogin extends HttpServlet {
 				response.sendRedirect("submitfailure.jsp");
 			}
 		} else if (request.getParameter("register") != null) {
-			if (map.containsKey(user) && map.get(user).equals(pass)) {
+			if (map.containsKey(user)) {
+				response.sendRedirect("failure.jsp");
+			} else if (!pass.equals(conf)) {
 				response.sendRedirect("failure.jsp");
 			} else {
 				map.put(user, pass);
