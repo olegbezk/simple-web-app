@@ -15,18 +15,17 @@
 			</tr>
 			<tr>
 				<td>Enter your UserId:</td>
-				<td><input type=text name=user></td>
+				<td><input type="text" name="user"></td>
 			</tr>
 			<tr>
 				<td>Enter your Password:</td>
-				<td><input type=password name=pass></td>
+				<td><input type="password" name="pass"></td>
 			</tr>
 			<tr>
-				<td><input type=submit value=submit></td>
-				<td><input type=reset value=refresh></td>
+				<td><input type="submit" value="Submit" name="submit"></td>
+				<td><input type="submit" value="Register" name="register"></td>
 			</tr>
 		</table>
 	</form>
-	<a href="register.jsp">Register</a>
 </body>
 </html>
