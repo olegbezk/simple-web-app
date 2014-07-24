@@ -8,14 +8,13 @@
 		omit-xml-declaration="true" />
 	<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Success Page</title>
+<title>Incorrect</title>
 </head>
 <body>
-	<h1 align="center">User registration is successful!</h1>
+	<h1 align="center">Incorrect password or login !</h1>
 	<h2 align="center">
 		<a href="index.jsp">Login Page</a>
 	</h2>
-	<h3 align="center" style="color: blue">simple login form</h3>
 </body>
 	</html>
 </jsp:root>

@@ -40,7 +40,7 @@ public class UserLogin extends HttpServlet {
 			if (map.containsKey(user) && map.get(user).equals(pass))
 				response.sendRedirect("success.jsp");
 			else {
-				response.sendRedirect("failure.jsp");
+				response.sendRedirect("submitfailure.jsp");
 			}
 		} else if (request.getParameter("register") != null) {
 			if (map.containsKey(user) && map.get(user).equals(pass)) {
