@@ -3,31 +3,30 @@
    "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Login Form</title>
-    </head>
-    <body>
-        <center>
-        <form action=LoginServlet>
-            <table border=1>
-                <tr>
-                    <th colspan="2">Login Form</th>
-                </tr>
-                <tr>
-                    <td>Enter your UserId:</td>
-                    <td><input type=text name=userId></td>
-                </tr>
-                <tr>
-                    <td>Enter your Password:</td>
-                    <td><input type=password name=pwd></td>
-                </tr>
-                <tr>
-                    <td><input type=submit value=submit></td>
-                    <td><input type=reset value=refresh></td>
-                </tr>
-            </table>
-        </form>
-    </center> 
-    </body>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Login Page</title>
+</head>
+<body>
+	<form action="UserLogin" method="post">
+		<table border="1">
+			<tr>
+				<th colspan="2">Login Form</th>
+			</tr>
+			<tr>
+				<td>Enter your UserId:</td>
+				<td><input type=text name=user></td>
+			</tr>
+			<tr>
+				<td>Enter your Password:</td>
+				<td><input type=password name=pass></td>
+			</tr>
+			<tr>
+				<td><input type=submit value=submit></td>
+				<td><input type=reset value=refresh></td>
+			</tr>
+		</table>
+	</form>
+	<a href="register.jsp">Register</a>
+</body>
 </html>
